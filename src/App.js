@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
 import {
-  Redirect,
-  Switch,
   BrowserRouter as Router,
   Route,
   Routes
@@ -13,13 +11,14 @@ import Cart from "./pages/Cart";
 const App = () => {
   return (
     <div className="container">
-      <Routes>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/cart" component={Cart} />
-          <Redirect to="/" />
-        </Switch>
-      </Routes>
+      <Router>
+        <Routes>
+    
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/cart" element={<Cart/>} />
+
+        </Routes>
+      </Router>
     </div>
   );
 };

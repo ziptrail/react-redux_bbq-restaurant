@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import logo from './logo.png';
 import './styles.css';
 
 const Logo = () => (
   <div className='header-content_logo'>
     <div>
-      <img src={logo} alt='logo' />
+      <Link to="/">
+        <img src={logo} alt='logo' />
+      </Link>
       <span>
         <b>Ziptrail</b>
       </span>
