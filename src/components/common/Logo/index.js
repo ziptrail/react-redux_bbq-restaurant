@@ -14,7 +14,7 @@ const Logo = () => (
       </span>
     </div>
     <p>
-      <b>Restaurant & BBQ</b>
+      <b>Restaurant & BBQ 123123</b>
     </p>
   </div>
 );
